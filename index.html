@@ -11,7 +11,7 @@
 </head>
 
 <body class="bg-gray-100 min-h-screen  w-full">
-   <nav class="bg-purple-100 p-4 shadow-md sticky top-0 z-50">
+ <nav class="bg-purple-100 p-4 shadow-md sticky top-0 z-50">
   <div class="flex flex-row items-center justify-between w-full relative">
     <div class="flex items-center space-x-4">
       <img src="img/pr.jpeg" alt="Moise profile" class="h-16 w-16 rounded-full border-4 border-white">
@@ -26,13 +26,16 @@
       </label>
 
       <ul
-        class="absolute right-0 mt-2 w-40 max-h-0 overflow-hidden transition-all duration-500 ease-in-out
-               peer-checked:max-h-60 sm:static sm:max-h-none sm:flex flex-col sm:flex-row items-start sm:items-center
-               bg-purple-100 shadow-md sm:shadow-none rounded-md sm:rounded-none
+        class="transition-all duration-500 ease-in-out
+               max-h-0 overflow-hidden
+               peer-checked:max-h-60
+               absolute right-0 mt-2 w-40
+               bg-purple-100 shadow-md rounded-md
+               flex flex-col sm:flex-row sm:static sm:max-h-none sm:overflow-visible sm:w-auto sm:shadow-none sm:rounded-none
                space-y-2 sm:space-y-0 sm:space-x-8 text-black font-semibold font-[cursive] text-md">
-        <li><a href="#" class="hover:text-purple-600 block px-4 py-2">Home</a></li>
-        <li><a href="#" class="hover:text-purple-600 block px-4 py-2">Our College</a></li>
-        <li><a href="#" class="hover:text-purple-600 block px-4 py-2">Team Members</a></li>
+        <li><a href="#" class="hover:text-purple-600 block px-4 py-2 sm:px-0 sm:py-0">Home</a></li>
+        <li><a href="#" class="hover:text-purple-600 block px-4 py-2 sm:px-0 sm:py-0">Our College</a></li>
+        <li><a href="#" class="hover:text-purple-600 block px-4 py-2 sm:px-0 sm:py-0">Team Members</a></li>
       </ul>
     </div>
   </div>
